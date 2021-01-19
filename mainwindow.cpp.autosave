@@ -26,7 +26,7 @@ void MainWindow::on_pushButton_clicked()
 {
     QString var = "toto" ;
     int i ;
-    int d = 10;
+    int d = 10 ;
 
     QString str;
     str.setNum(d);
@@ -35,7 +35,7 @@ void MainWindow::on_pushButton_clicked()
     i= i+d;
     str.setNum(i);
     ui->TextEuros->setPlainText(str);
-
+    
    // ui->TextEuros->setText(var);
 
 }
