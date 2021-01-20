@@ -1,18 +1,22 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
 
     ui->setupUi(this);
+   ui->label->setStyleSheet("QLabel { background-color : red; color : blue; }");
 }
 
 
 MainWindow::~MainWindow()
 {
+
     delete ui;
+
 }
 
 
@@ -24,9 +28,48 @@ void MainWindow::on_MonBouton_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
-    QString var = "toto" ;
+
+
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+
+    QString stringVal ;
+    double  intVal ;
+
+    intVal = (ui->label->text() + ui->pushButton_2->text()).toDouble();
+
+    stringVal = QString::number(intVal,'g',15);
+    ui->label->setText(stringVal);
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    QString stringVal ;
+    double  intVal ;
+
+    intVal = (ui->label->text() + ui->pushButton_1->text()).toDouble();
+
+    stringVal = QString::number(intVal,'g',15);
+    ui->label->setText(stringVal);
+}
+
+void MainWindow::on_pushButton_1_clicked()
+{
+    QString stringVal ;
+    double  intVal ;
+
+    intVal = (ui->label->text() + ui->pushButton_1->text()).toDouble();
+
+    stringVal = QString::number(intVal,'g',15);
+    ui->label->setText(stringVal);
+}
+
+void MainWindow::on_pushButtonConvertir_clicked()
+{
     int i ;
-    int d = 10;
+    int d = 10 ;
 
     QString str;
     str.setNum(d);
