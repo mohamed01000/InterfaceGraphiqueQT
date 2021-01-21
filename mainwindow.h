@@ -42,6 +42,8 @@ private slots:
 
     void on_pushButtonPoint_clicked();
 
+    void on_pushButtonVirgule_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

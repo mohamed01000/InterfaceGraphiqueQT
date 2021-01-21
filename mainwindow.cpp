@@ -33,7 +33,7 @@ void MainWindow::on_pushButton_clicked()
     QString stringVal ;
     double  intVal ;
 
-    intVal = (ui->label->text() + ui->pushButtonPoint->text()).toDouble();
+  //  intVal = (ui->label->text() + ui->pushButtonPoint->text()).toDouble();
 
     stringVal = QString::number(intVal,'g',15);
     ui->label->setText(stringVal);
@@ -90,7 +90,7 @@ void MainWindow::on_pushButton_7_clicked()
     QString stringVal ;
     double  intVal ;
 
-    intVal = (ui->label->text() + ui->pushButton_1->text()).toDouble();
+    intVal = (ui->label->text() + ui->pushButton_7->text()).toDouble();
 
     stringVal = QString::number(intVal,'g',15);
     ui->label->setText(stringVal);
@@ -160,4 +160,9 @@ void MainWindow::on_pushButtonPoint_clicked()
 
     stringVal = QString::number(intVal,'g',15);
     ui->label->setText(stringVal);
+}
+
+void MainWindow::on_pushButtonVirgule_clicked()
+{
+  ui->label->setText(ui->label->text() + ".");
 }
