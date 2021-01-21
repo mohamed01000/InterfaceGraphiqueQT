@@ -166,3 +166,9 @@ void MainWindow::on_pushButtonVirgule_clicked()
 {
   ui->label->setText(ui->label->text() + ".");
 }
+
+void MainWindow::on_pushButtonClear_clicked()
+{
+    ui->label->clear();
+    ui->label_2->clear();
+}
